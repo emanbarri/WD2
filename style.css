@@ -90,6 +90,24 @@ color:white
 aside a:hover{
 color: navy;
 }
+article {
+background:rgba(0,0,0,.2);
+padding:5px;
+}
+article h2 {
+  text-align:center;
+  color:navy;
+  margin:1%;
+}
+.top {
+	grid-area:top;
+}
+.middle {
+	grid-area:middle;
+}
+.bottom {
+	grid-area:bottom;
+}
 footer {
   grid-area:footer;
   background:rgba(0,0,0,.2);
@@ -116,7 +134,20 @@ footer p {
      "aside"
     "footer";   
     }
-
+.container2 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "top"
+    "middle"
+    "bottom"
+    "footer";
+    }
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
