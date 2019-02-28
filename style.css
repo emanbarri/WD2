@@ -99,6 +99,11 @@ article h2 {
   color:navy;
   margin:1%;
 }
+article p {
+  color:white;
+  padding:1% 2%;
+  font-size:1em;
+}
 .top {
 	grid-area:top;
 }
@@ -185,7 +190,16 @@ footer p {
      "aside aside" 
     "footer footer";
     }
-
+.container2 { /*for blog.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+     "top top"
+     "middle middle"
+     "bottom bottom"
+    "footer footer footer";
+    }
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -215,6 +229,12 @@ footer p {
     "nav main aside"
     "footer footer footer";
     }
-	
+	grid-template-columns:auto 1fr 1.5%;
+  grid-template-areas:
+    "header main article "top"
+    "nav main article "middle"
+    "nav main article "bottom";
+	"footer footer footer"
+    }
 
 	}
