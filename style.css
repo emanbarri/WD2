@@ -229,12 +229,14 @@ footer p {
     "nav main aside"
     "footer footer footer";
     }
-	grid-template-columns:auto 1fr 1.5%;
-  grid-template-areas:
-    "header main article "top"
-    "nav main article "middle"
-    "nav main article "bottom";
-	"footer footer footer"
+	.container2 { /*for blog.html*/
+     grid-template-columns:auto 1fr 1.5fr;
+     grid-template-areas:
+    "header header header"
+    "nav main top"
+    "nav main middle"
+    "nav main bottom";
+    "footer footer footer"
     }
 
 	}
