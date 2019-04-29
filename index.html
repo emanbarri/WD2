@@ -1,52 +1,76 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Let's Travel the World</title>
+    <title>Travel the World</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="code.js"></script>
-</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
  <body>
-  <div class="container1">
+  <div class="container4">
     <header>
-      <h1>Let's Travel The World!</h1>
-      <h3>Its the Journey And the Destination </h3>
+        <h1>Let's Travel the World!</h1>
+        <h3>It's the Journey AND the Destination</h3>
     </header>
     <nav id="flex-nav">
     <a href="#" class="toggleNav">&#9776; Menu</a> <!--This will only be visible less than 480px wide-->
-      <ul>
+        <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Destination</a></li> 
-        <li><a href="special.html">Special</a></li> 
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="special.html">Special</a></li>
         <li><a href="blog.html">Travel Blog</a></li>
-         <li><a href="contact.html">Contact Us</a></li>  
-      </ul>
-      </nav>
+        <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+    </nav>
     <main>
-<p>By traveling - both within the USA and abroad - we expand our horizons and gain a greater appreciation of the world we live in.</p>
-<p>Experiencing other cultures, including new food, languages, and customs, challenges us and makes us better understand our own culture.</p>
-<p>We are a full service travel agency. As seasoned travelers ourselves, we know what we're talking about and can draw upon our own experiences when putting together a great adventure for you and your family.</p>
-<p>Once you've enjoyed a couple of great trips, you might just "catch the bug" like we did and start planning two or three trips ahead! Maybe you'll even put a big world map up on your wall at home and get out the color pushpins...</p>
-<p>So contact us today and let's start planning your next amazing trip!</p>
-</main>
-<aside>
-  <ul>
-        <li><a href="https://www.choosechicago.com/">Chicago</a></li>
-        <li><a href="https://www.nycgo.com/">New York</a></li>
-        <li><a href="https://explorestlouis.com/">St. Louis</a></li>
-        <li><a href="http://www.sftravel.com/">San Francisco</a></li>
-        <li><a href="https://washington.org/">Washington D.C.</a></li>
-  </ul>
-</aside>
-    <footer> 
-      <P> &copy; Travel The World LLC </P>
-      <p>123 Main Street</p> 
-      <p>Sometown, USA 12345</p>
-    </footer>
+        <h2>Contact Us</h2>
+       
+      <p> Use this form to allow us to get in touch with you within one business days! <br>
+      *= Required Field </p>
+      
+     <form class="nestedgrid2">
+       
+       <div class="div1">
+     Name*<br> <input type="text" size="30" name="fullname" autofocus required spellcheck="false" autocomplete="off"><br>
+     Email*<br> <input type="email" size="30" name="email" required><br>
+     Phone*<br> <input type="tel" size="30" name="phone" required><br>
+     Personal Website<br> <input type="url" size="30" name="personal website"><br>
+       </div>
+       <br>
+       <div class="div2">                                                  
+     Next destination<br> <input type="text" list="vaca"><br>
+      <datalist id="vaca">
+       <option value="Beijing">
+       <option value="Lisbon">
+        <option value="Paris">
+        <option value="Sydney">
+        <option value="Tokyo">
+        <option value="Washington D.C">
+     </datalist>
+        Expected date of departure<br> <input type="date" name="date"><br>
+     Number of nights on Trip<br> <input type="text" name="number of nights on trip"><br>
+        <input type="submit" value= "Help Me Book My Trip!" class="button shadow">
+       </div>
+       
+         </form>
+        
 
+  <div class="call">
+   Or Call Us 
+                                   
+  <div class="phone">1-888-Travel1</div>
+      </div>
+    </main>
+
+    <footer>
+        <p> &copy; Travel The World LLC</p>
+        <p>123 Main Street</p>
+        <p>Sometown, USA 12345</p>
+    </footer>
   </div>
 </body>
+  <script src="code2.js"></script>
 </html>
